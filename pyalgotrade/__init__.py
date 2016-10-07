@@ -19,3 +19,6 @@
 """
 
 __version__ = "0.18"
+
+import pyalgotrade.broker as broker
+import pyalgotrade.plotter as plotter

@@ -20,7 +20,7 @@
 
 import collections
 
-import broker
+import pyalgotrade.broker as broker
 from pyalgotrade import warninghelpers
 
 import matplotlib.pyplot as plt
