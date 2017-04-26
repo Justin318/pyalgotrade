@@ -31,7 +31,7 @@ class FastDictReader(object):
         self.__fieldNames = fieldnames
         self.reader = csv.reader(f, dialect, *args, **kwargs)
         if self.__fieldNames is None:
-            self.__fieldNames = self.reader.next()
+            self.__fieldNames = next(self.reader)
         self.__dict = {}
 
     def __iter__(self):
